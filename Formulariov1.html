@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Pedido de Comida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #7b2cbf;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
-Oque vc deseja pedir?
-*barra de pesquisa
-*Perguntar se quer q entregue em casa ou se vai pegar na loja
-*caso queira q entregue em casa, perguntar onde mora
-*dar o valor desse frente
-*Passa minha chave pix para pagamentos
+
+  <form action="/enviar-pedido" method="post">
+    <h2>Faça seu Pedido</h2>
+
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="endereco">Endereço de entrega:</label>
+    <input type="text" id="endereco" name="endereco" required>
+
+    <label for="telefone">Telefone para contato:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <button type="submit">Enviar Pedido</button>
+  </form>
+
 </body>
 </html>
