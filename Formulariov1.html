@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="styleFormulario.css">
-
 <head>
   <meta charset="UTF-8">
   <title>Pedido de Comida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #7b2cbf;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
+<body>
 
-  <body>
-  <header class="conteudo">
-    <section id="titulo">
-      <h1>Sabor Do Açaí </h1>
-    </section>
-    <nav>
-      <a href="V1.html">Sobre</a>
-      <a href="#contato">Contato</a>
-      <a href="Formulariov1.html">Fazer pedido</a>
-      <a href="cardapio.html">Cardápio</a>
-    </nav>
-  </header>
-  
-  <main>
-    <form action="/enviar-pedido" method="post">
+  <form action="enviar-pedido" method="post">
     <h2>Faça seu Pedido</h2>
 
     <label for="nome">Nome completo:</label>
@@ -32,23 +56,16 @@
 
     <label for="telefone">Telefone para contato:</label>
     <input type="tel" id="telefone" name="telefone" required>
+    
+    <label for="pedido">Farça seu pedido (Com o tamanho, até 3 acompanhamentos, 
+    os extras e a quantidade desejada):</label>
+    <input type="text" id="pedido" name="pedido" required>
 
-    <label for="pedido">Descrição do pedido:</label>
+    <label for="obs">Observarções:</label>
     <input type="text" id="pedido" name="pedido" required>
 
     <button type="submit">Enviar Pedido</button>
-    </form>
-  </main>
+  </form>
 
-
-   <footer class="conteudo" id="contato">
-      <h4>Fale conosco!</h4>
-        <ul>
-          <li><a href="https://www.instagram.com/sabordoacai.025/">Instagram</a></li>
-          <li><a href="https://maps.app.goo.gl/nhDRy9WEsqDZfx9N7">Unidade Santa Rita</a></li>
-          <li><a href="https://maps.app.goo.gl/UUDc8UH8qxRDtE539">Unidade João Pessoa</a></li>
-          <li><a href="https://www.whatsapp.com/">Número:(XX) XXXXX-XXXX</a></li>
-        </ul>
-  </footer>
 </body>
 </html>
