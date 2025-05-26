@@ -1,0 +1,88 @@
+/*Cabeçalho e Rodapé*/
+
+:root {
+    --offwhite: #dfd8e6;
+    --deeppurple:#241233; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--offwhite);
+}
+
+.conteudo {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+.conteudo h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 2.5em;
+  color: var(--offwhite);
+  margin: 0px 250px;
+  padding: 50px 0px;
+  background-color: rgb(36, 18, 51, 0.75);
+}
+
+.conteudo nav{
+  margin: 15px 0px 0px;
+  padding: 10px;
+  background: var(--offwhite);
+  display: flex;
+  justify-content: space-around;
+}
+
+.conteudo ul{
+  margin: 15px 0px 0px;
+  padding: 10px;
+  background: var(--offwhite);
+  display: flex;
+  justify-content: space-around;
+}
+
+.conteudo h4{
+  color: var(--offwhite);
+  background-color: rgb(36, 18, 51, 0.75);
+  margin: 0px 300px;
+  padding: 25px 0px;
+}
+
+/*Texto e imagem*/
+
+.texto{
+  background-color: rgb(36, 18, 51, 0.75);
+  display: grid;
+  margin: 20px;
+  padding: 20px;
+}
+
+.texto h2 {
+  grid-column: 1/ span 3;
+  margin: 40px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.875em;
+  color: var(--offwhite);
+  
+}
+
+.texto img{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  color: var(--offwhite);
+}
+
+.texto p{
+  font-size: 1.25em;
+  grid-column: 2;
+  place-content: center;
+  color: var(--offwhite);
+}
+
