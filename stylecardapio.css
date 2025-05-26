@@ -61,15 +61,32 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 40px 20px;
-  box-sizing: border-box;
+  background-color: rgb(36, 18, 51, 0.75);
+  padding: 50px;
+  margin: 30px;
 }
 
-table {
-  border-collapse: collapse;
+.tabela {
+  background-color: var(--offwhite);
+  padding:20px;
+  margin:20px;
+  border-radius: 8px;
 }
 
-th, td {
+.tabela th, td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #000000;
+  border-bottom: solid 1px;
+}
+
+.acompanhamentos {
+  background-color: var(--offwhite);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.acompanhamentos p{
+  padding:0px;
+  margin:0px;
 }
