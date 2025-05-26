@@ -5,13 +5,6 @@
     --deeppurple:#241233; 
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--offwhite);
-}
-
 .conteudo {
   background-image: url("background.jpg");
   background-repeat: no-repeat;
@@ -54,6 +47,13 @@ body {
 
 /*Texto e imagem*/
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--offwhite);
+}
+
 .texto{
   background-color: rgb(36, 18, 51, 0.75);
   display: grid;
@@ -62,26 +62,23 @@ body {
 }
 
 .texto h2 {
-  grid-column: 1/ span 3;
+  grid-column: 1/ span 2;
   margin: 40px;
   padding: 10px;
   text-align: center;
   justify-content: center;
-  font-size: 1.875em;
+  font-size: 2.0em;
   color: var(--offwhite);
   
 }
 
 .texto img{
   width: 100%;
-  grid-column: 1;
-  grid-row: 2 / span 3;
   color: var(--offwhite);
 }
 
 .texto p{
-  font-size: 1.25em;
-  grid-column: 2;
+  font-size: 1.5em;
   place-content: center;
   color: var(--offwhite);
 }
